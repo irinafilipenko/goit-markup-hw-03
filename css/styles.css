@@ -215,7 +215,6 @@ li .address-list-link {
 /*--Галлерея работ--*/
 .section-title {
   display: block;
-  min-width: 376px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
@@ -284,6 +283,12 @@ li .address-list-link {
   background-color: #2F303A;
 }
 
+.footer-address-item:not(:last-child) {
+display: block;
+margin-bottom: 9px;
+}
+
+
 .footer .container {
   padding: 60px 0;
 }
@@ -314,10 +319,7 @@ li .address-list-link {
   color: var(--accent-color);
 }
 
-.footer-address-item:not(:last-child) {
-  display: block;
-margin-bottom: 9px;
-}
+
 
 /*--END FOOTER--*/
 
