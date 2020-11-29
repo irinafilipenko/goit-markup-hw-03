@@ -190,14 +190,14 @@ li .address-list-link {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 1.14;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .main-list-description {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.72;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-color);
 }
@@ -212,6 +212,10 @@ li .address-list-link {
 .main-list-item {
   display: block;
   width: 270px;
+}
+
+.main-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*--END Главная секция--*/
