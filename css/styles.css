@@ -2,7 +2,8 @@
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --accent-color: #2196f3;
-  --third-color:  #757575;
+  --third-color: #757575;
+  --second-color: #ffffff;
 }
 
 body {
@@ -30,7 +31,11 @@ ul {
   margin: 0;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
 }
 
@@ -57,6 +62,15 @@ box* {
 }
 
 /*--HEADER--*/
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: block;
+}
+
 .logo {
   text-decoration: none;
   font-family: var(--secondary-font);
@@ -64,11 +78,13 @@ box* {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  }
-
+}
 .header .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
   margin-right: 93px;
 }
+
 .color-web {
   color: var(--accent-color);
 }
@@ -83,6 +99,7 @@ box* {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  padding: 32px 0;
 }
 
 li .address-list-link {
@@ -99,16 +116,10 @@ li .address-list-link {
   color: var(--accent-color);
 }
 
-.header {  
-    padding-top: 32px;
-  padding-bottom: 32px;
-   border-bottom :1px solid #ECECEC ;
- 
-}
-
-.header .container, .header .navigation{
+.header .container,
+.header .navigation {
   display: flex;
- align-items: center;
+  align-items: center;
 }
 
 .header .navigation-list {
@@ -119,7 +130,6 @@ li .address-list-link {
 .header .navigation-list-item:not(:last-child),
 .header .address-list-item:not(:last-child) {
   margin-right: 50px;
-
 }
 
 .header .address {
@@ -130,8 +140,7 @@ li .address-list-link {
   display: flex;
 }
 
-
-  /*--END HEADER---*.
+/*--END HEADER---*.
 
  /*--Главная секция--*/
 .hero-title {
@@ -145,7 +154,7 @@ li .address-list-link {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .hero .modal-btn {
@@ -153,7 +162,8 @@ li .address-list-link {
   margin: 0 auto;
   min-width: 20px;
   padding: 10px 32px;
-  border-radius:4px;
+  border-radius: 4px;
+  border-color: transparent;
   cursor: pointer;
   font-family: var(--main-font);
   font-weight: 700;
@@ -161,27 +171,23 @@ li .address-list-link {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background-color: var(--accent-color) ;
+  background-color: var(--accent-color);
 }
 
- .hero {
-   background-color: #2F303A; ;
- }
+.hero {
+  background-color: #2f303a;
+}
 
- .hero .container {
+.hero .container {
   display: block;
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-
-
-
-
 /*---MAIN--*/
 .main-list-title {
   display: block;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -196,23 +202,25 @@ li .address-list-link {
   color: var(--third-color);
 }
 
- .main .container {
-   display: flex;
-   justify-content:space-between;
-   padding-bottom: 94px;
-   padding-top: 94px;
-    }
+.main .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
-    .main-list-item {
-      display: block;
-      width: 270px;
-      outline: 1px solid tomato;
-    }
+.main-list-item {
+  display: block;
+  width: 270px;
+}
 
-
-    /*--END Главная секция--*/
+/*--END Главная секция--*/
 
 /*--Галлерея работ--*/
+.galery .container {
+  padding-bottom: 94px;
+}
+
 .section-title {
   display: block;
   font-weight: 700;
@@ -221,27 +229,34 @@ li .address-list-link {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-
 }
 
 .galery .galery-list {
   display: flex;
-  justify-content:space-between;
-  margin-bottom: 94px;
+  justify-content: space-between;
 }
 
+.galery-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 /*--END Галлерея работ--*/
 
 /*--Сотрудники--*/
 
 .about-me {
-  background: #F5F4FA;
+  background-color: #f5f4fa;
+}
+
+.about-me .container {
+  display: block;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .about-me-name {
   display: block;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -249,8 +264,6 @@ li .address-list-link {
   letter-spacing: 0.03em;
 }
 .about-me-profession {
-  display: block;
-  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -261,36 +274,36 @@ li .address-list-link {
 
 .about-me-list {
   display: flex;
-  justify-content:space-between;
-  padding-bottom: 94px;
-}
-
-.about-me-img {
-  display: block;
-  margin-bottom: 30px;
+  justify-content: space-between;
 }
 
 .about-me-item {
-  background-color: white;
-  border: 1px solid #ECECEC ;
+  background-color: var(--second-color);
+  border: 1px solid #ececec;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.about-me-description {
+  display: block;
+  padding: 30px 24px;
 }
 
 /*--FOOTER--*/
 
 .footer {
-  background-color: #2F303A;
+  background-color: #2f303a;
 }
 
 .footer-address-item:not(:last-child) {
-display: block;
-margin-bottom: 9px;
+  display: block;
+  margin-bottom: 9px;
 }
 
-
 .footer .container {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-address-link {
@@ -304,27 +317,21 @@ margin-bottom: 9px;
 .footer .logo {
   display: block;
   margin-bottom: 20px;
-
+  color: var(--second-color);
 }
-
-.footer-logo {
-   color: #ffffff;
- }
 
 .geolocation {
-  color: #ffffff;
+  color: var(--second-color);
 }
 
-.footer-address-link:hover
+.footer-address-link:hover {
   color: var(--accent-color);
 }
 
-
-
 /*--END FOOTER--*/
 
-                       /*_----------PORTFOLIO---------------*/
-   /*--Главная секция--*/
+/*_----------PORTFOLIO---------------*/
+/*--Главная секция--*/
 
 .device-title {
   font-weight: 700;
@@ -334,6 +341,10 @@ margin-bottom: 9px;
 }
 
 .modal-btn-portfolio {
+  display: block;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-color: transparent;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
@@ -341,7 +352,9 @@ margin-bottom: 9px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  background-color: #f5f4fa;
 }
+
 .device-list-description {
   font-weight: 400;
   font-size: 16px;
@@ -349,7 +362,53 @@ margin-bottom: 9px;
   letter-spacing: 0.03em;
   color: var(--third-color);
 }
- 
+
 .modal-btn-portfolio:hover {
-  color: #FFFFFF;
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.capabilities .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.capabilities .button-list {
+  display: flex;
+  margin-bottom: 56px;
+  justify-content: center;
+}
+
+.capabilities .button-item:not(:last-child) {
+  display: block;
+  margin-right: 8px;
+}
+
+.capabilities .device-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.capabilities .device-item {
+  max-width: 370px;
+  width: calc((100%-60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+}
+.device-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.device-item:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+
+.device-description {
+  display: block;
+  padding: 20px 24px;
+}
+.device-title {
+  padding-bottom: 4px;
 }
