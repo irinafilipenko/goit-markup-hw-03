@@ -65,6 +65,8 @@ box* {
 
 .header {
   border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header .container {
@@ -80,8 +82,6 @@ box* {
   letter-spacing: 0.03em;
 }
 .header .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
   margin-right: 93px;
 }
 
@@ -176,12 +176,12 @@ li .address-list-link {
 
 .hero {
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero .container {
   display: block;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 /*---MAIN--*/
@@ -202,11 +202,14 @@ li .address-list-link {
   color: var(--third-color);
 }
 
+.main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .main .container {
   display: flex;
   justify-content: space-between;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .main-list-item {
@@ -221,7 +224,7 @@ li .address-list-link {
 /*--END Главная секция--*/
 
 /*--Галлерея работ--*/
-.galery .container {
+.galery {
   padding-bottom: 94px;
 }
 
@@ -250,10 +253,6 @@ li .address-list-link {
 
 .about-me {
   background-color: #f5f4fa;
-}
-
-.about-me .container {
-  display: block;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -298,16 +297,13 @@ li .address-list-link {
 
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-address-item:not(:last-child) {
   display: block;
   margin-bottom: 9px;
-}
-
-.footer .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-address-link {
@@ -372,7 +368,7 @@ li .address-list-link {
   background-color: var(--accent-color);
 }
 
-.capabilities .container {
+.capabilities {
   padding-top: 94px;
   padding-bottom: 94px;
 }
