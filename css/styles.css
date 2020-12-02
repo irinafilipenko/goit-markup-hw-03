@@ -406,7 +406,6 @@ li .address-list-link {
   width: calc((100%-60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
   cursor: pointer;
 }
 .device-item:hover {
@@ -424,6 +423,9 @@ li .address-list-link {
 .device-description {
   display: block;
   padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .device-title {
   padding-bottom: 4px;
