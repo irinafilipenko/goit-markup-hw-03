@@ -163,7 +163,7 @@ li .address-list-link {
   min-width: 20px;
   padding: 10px 32px;
   border-radius: 4px;
-  border-color: transparent;
+  border: none;
   cursor: pointer;
   font-family: var(--main-font);
   font-weight: 700;
@@ -350,7 +350,7 @@ li .address-list-link {
   display: block;
   padding: 6px 22px;
   border-radius: 4px;
-  border-color: transparent;
+  border: none;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
